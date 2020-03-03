@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .game{
+            overflow: hidden;
+        }
+        .player{
+            position:fixed;
+            left: 30px;
+            top:20px;
+        }
+    </style>
+    <title>飞机大战</title>
+</head>
+
+<body>
+    <!-- <iframe src="./audio/bgm.mp3" allow="autoplay" style="display:none" ></iframe> -->
+    <audio id="bgm" src="./audio/boom.mp3" autoplay loop="true" hidden="true"></audio>
+    <!-- <audio id="boom" src="./audio/boom.mp3" controls="controls" loop="true" hidden="true">
+    </audio>
+    <audio id="bullet" src="./audio/bullet.mp3" controls="controls" loop="true" hidden="true"></audio> -->
+    <div id="game">
+        <span id="playerInfo"></span>
+    </div>
+    <script src="./game.js"></script>
+</body>
+
+</html>
